@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+body {
+    background-color: #6441a4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2377ff33' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23444444' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2300db88' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23474747' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2300aec6' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%234b4b4b' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23007fdf' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234e4e4e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23004ac2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23525252' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23000077' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23555555' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 2em;
+    margin-top: 10px;
+}
+
+.logo h3 {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand span {
+    font-weight: 500;
+}
+
+.navbar a {
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-item a:hover {
+    color: rgb(138, 90, 226) !important;
+}
+
+.logo h3, .logo h2 {
+    line-height: 15px;
+    font-family: montserrat;
+}
+
+.card-body ul {
+    padding-left: 20px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+footer i.fas, i.fab {
+    color: #6441A4;
+    align-self: center;
+}
+
+.showcase {
+    width: 100vw;
+    height: 50VH;
+    display: flex;
+    background: url('../images/architectural-design-architecture-ceiling-chairs-380768.jpg') no-repeat center center/cover, linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.678));
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.showcase h2 {
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.showcase p {
+    color: white;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.bottom-span {
+    background: linear-gradient(rgba(0, 128, 0, 0.411), rgb(1, 85, 1));
+    margin-top: 50px;
+}
+
+.projects {
+    background: white;
+    padding-bottom: 30px;
+}
+
+.card {
+    -webkit-box-shadow: 5px 7px 16px 1px #000000;
+    box-shadow: 5px 7px 16px 1px #000000;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+.card-deck {
+    padding-top: 20px;
+}
+
+.bottom-text-box p {
+    color: white;
+    padding: 100px;
+}
+
+/* Projects */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    padding-top: 80px;
+}
+
+.projects h4, .projects h3 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.parent img:hover {
+    z-index: 1;
+    opacity: .5;
+    background: #6441A4;
+}
+
+.parent a img {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, red 49.5%, black 50%);
+    background-size: 200% 200%;
+    background-position: bottom right;
+    height: 200px;
+}
+
+.parent a img:hover {
+    background-position: top left;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.aboutme {
+    display: flex;
+    background: rgb(58, 37, 97);
+    margin-top: 100px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+.aboutme h3 {
+    font-weight: bold;
+}
+
+/* Social-Section */
+
+/* contact */
+
+.contact {
+    margin: 2em auto;
+    height: 100%;
+}
+
+button.btn {
+    background-color: rgb(58, 37, 97);
+    color: #ffffff;
+}
+
+.custom-control-label::before {
+    background-color: darkorange;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background: #262626;
+    text-align: center;
+    height: 100px;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+.links ul {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
+.links li {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.links a:hover {
+    color: #6441A4;
+}
+
+.footer-left .fab:hover {
+    color: white;
+}
+
+.footer-left a img {
+    height: 17px;
+}
+
+.footer-left {
+    padding-top: 20px;
+}
+
+.footer-left a {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.footer-left p {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Media */
+
+@media(max-width:990px) {
+    nav li {
+        background: rgb(117, 77, 190);
+        text-align: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid black;
+    }
+    .card-deck {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    .card-deck li {
+        list-style: none;
+    }
+    .showcase h2 {
+        top: 50%;
+    }
+    .showcase p {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .parent {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .div1, .div2, .div3 {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .showcase h2 {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .showcase p {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar-toggler {
+        color: #6441A4 !important;
+    }
+    .parent {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .div1, .div2, .div3 {
+        margin-bottom: 30px;
+    }
+    .div3 {
+        padding-bottom: 20px;
+    }
+    .card-deck {
+        display: block;
+    }
+    footer {
+        height: 115px;
+    }
+}
+
+@media(max-width:500px) {
+    .showcase {
+        background: url('../images/architectural-design-architecture-ceiling-chairs-380768.jpg') no-repeat center center/cover, linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.678));
+        background-blend-mode: overlay;
+        width: 100vw;
+    }
+    .showcase h2 {
+        top: 50%;
+    }
+    .showcase p {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .parent {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .div1, .div2, .div3 {
+        margin-bottom: 30px;
+    }
+    footer {
+        height: 115px;
+    }
+    .links a {
+        display: flex;
+    }
+}
+
+@media(max-width:430px) {
+    .showcase h2 {
+        font-size: 25px;
+        top: 50%;
+    }
+    .showcase p {
+        font-size: 10px;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .parent {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .div1, .div2, .div3 {
+        margin-bottom: 30px;
+    }
+    footer {
+        height: 215px;
+    }
+    .footer a {
+        display: block;
+    }
+}
